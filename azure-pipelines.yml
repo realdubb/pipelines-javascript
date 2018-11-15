@@ -22,5 +22,6 @@ steps:
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/tests'
     includeRootFolder: false
+    archiveFile: '$(Build.ArtifactStagingDirectory)/tests.zip'
 
 - task: PublishBuildArtifacts@1
